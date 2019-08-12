@@ -1,11 +1,11 @@
 /* globals */
 h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
-    font-family: 'Satisfy', cursive;
+    /* font-family: 'Satisfy', cursive; */
+    
 }
 p{
-
-font-family: 'Rokkitt', serif;
+    font-family: 'Rokkitt', serif;
 }
 
 body{
@@ -21,51 +21,69 @@ section div.scroll-up a.btn-floating{
     margin: -50px;
 }
 
-
 /* header */
-header{
+header#main{
     background: url('../imgs/background.jpg') center;
     background-attachment: fixed;
     height: 650px;
 }
+header.header{
+    background-color: #212529;
+}
 nav{
+    
     background: transparent;
     /* opacity:0.5; */
     text-transform: uppercase;
     position: sticky;
     top: 0;
 }
-nav a{
+
+nav div.nav-wrapper a{
+    color: rgba(218, 165, 32, 0.863);
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Lobster Two', cursive;
+}
+
+nav li a.dropdown-trigger ul.dropdown1 li{
+    background-color: #fff;
+    color: #000;
+    mix-blend-mode: multiply;
+}
+
+ul.sidenav{
+    text-transform: uppercase;
+    background-color: #ccc;
+   
+}
+ul.sidenav li a{
+     color: rgb(19, 13, 1);
     font-family: 'Satisfy', cursive;
 }
 
 #showcase div.text-caption{
     text-align: center;
     margin: 150px auto;
-    color: rgba(255,255,255,.9);
-    /* background-color: rgba(255, 255, 255, 0.089);
-    
-    mix-blend-mode: screen; */
-    border-radius: 20px;
-    padding: 30px;
+    /* color: rgba(255,255,255,.9); */
+    color: #e0e0e0d2;
+    /* display: block; */
 }
 #showcase div.text-caption h1{
   font-family: 'Varela Round';
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: .8rem;
-  /* background: -webkit-linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,0)); */
-  /* -webkit-text-fill-color: transparent; */
-    text-transform: uppercase!important;
+  text-transform: uppercase !important;
 }
 #showcase div.text-caption h2{
-    font-family: 'Lobster Two', cursive;
-  font-size: 25px;
+  /* font-family: 'Lobster Two', cursive; */
+  font-family: 'Satisfy', cursive; 
+  font-size: 50px;
   line-height: 2.0rem;
   letter-spacing: .4rem;
-  
-
-
+}
+#showcase div.text-body{
+    padding: 30px;
 }
 
 section#services{
@@ -76,17 +94,24 @@ section#services{
 }
 h2.section-heading{
     font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Bree Serif', serif;
+    font-size: 45px;
+    font-style: oblique;
+    color: #424242;
 }
 h3.section-subheading{
-    font-size: 30px;
+    /* font-size: 25px; */
     font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Satisfy', cursive;
 }
 
 h4.sevice-heading{
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
+}
+#services p{
+    color: #424242;
+    font-size: 20px;
 }
 
 
@@ -114,7 +139,7 @@ section#subscribe{
 /* footer */
 footer{
     padding: 5px;
-    position: sticky;
+    /* position: sticky; */
     bottom: 0;
     color: rgba(255,255,255,.9);
     border-top: #ccc 1px solid;
@@ -154,6 +179,59 @@ article.blog-article{
 }
 
 
-  
+/* projects   */
+header#executives{
+    background: url('../imgs/executivebg.jpg') center;
+    background-attachment: fixed;
+    height: 500px;
+    /* text-align: center; */
 
+}
+header#executives div#showcase{
+    background-color:rgba(0, 0, 0, 0.384);
+    color: #fff;
+    mix-blend-mode: multiply;
+    padding: 6px;
+    
+}
+
+
+/* about*/
+header#about{
+    background: url('../imgs/about.jpg') center;
+    background-attachment: fixed;
+    height: 500px;
+}
+header#about div#showcase{
+    background-color:rgba(0, 0, 0, 0.384);
+    color: #fff;
+    mix-blend-mode: multiply;
+    padding: 5px;
+    
+}
+
+
+/* executives */
+header#projects{
+    background: url('../imgs/projectsbg.jpg') center;
+    background-attachment: fixed;
+    height: 500px;
+}
+header#projects div#showcase{
+    background-color:rgba(0, 0, 0, 0.384);
+    color: #fff;
+    mix-blend-mode: screen;
+    padding: 12px;
+    
+}
+
+
+header.executives{
+    background-color: #ccc;
+}
+section.executives div.row{
+    background-color: #42424200;
+    margin: 0;
+    padding: 0;
+}
 

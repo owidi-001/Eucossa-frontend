@@ -15,9 +15,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Rokkitt|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 
     <!--Import materialize.css-->
@@ -32,7 +36,7 @@
 </head>
 
 <body id="page-top">
-    <header class="container-grid header">
+    <header class="container-grid header" id="main">
         <div class="container-grid extended-nav-component">
 
             <nav class="container-grid nav-extended nav-fixed">
@@ -48,11 +52,12 @@
                             <a class="link-text" href="blog.html">projects</a>
                         </li>
                         <li class="list-item-container">
-                            <a class="link-text" href="about.html">about</a>
+                            <a class='dropdown-trigger link-text' href="#" data-target='dropdown1'>about</a>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="about.html">ABOUT US</a></li>
+                                <li><a href="executive.html">EXUCUTIVE</a></li>
+                            </ul>
                         </li>
-                        <!-- <li class="list-item-container">
-                                                <a class="link-text" href="#">Executives</a>
-                                            </li> -->
                         <li class="list-item-container">
                             <a class="link-text" href="#">Join</a>
                         </li>
@@ -70,9 +75,9 @@
                 <li class="list-item-container">
                     <a class="link-text" href="about.html">about</a>
                 </li>
-                <!-- <li class="list-item-container">
-                                        <a class="link-text" href="#">Executives</a>
-                                    </li> -->
+                <li class="list-item-container">
+                                        <a class="link-text" href="executive.html">Executives</a>
+                                    </li>
                 <li class="list-item-container">
                     <a class="link-text" href="#">Join</a>
                 </li>
@@ -83,16 +88,22 @@
                 <div class="text-caption container">
                     <div class="text-header">
                         <h1>karibu</h1>
-                        <h2><span class="brand">Eucossa community</span></h2>
+                        <h2><span class="brand ">Eucossa community</span></h2>
                     </div>
                     <div class="text-body">
-                        <input type="button" class="btn btn-large pulse center" value="join">
+                        <input type="button" class="btn waves-effect waves-light #00b0ff light-blue accent-3 pulse center"
+                            value="join"/>
+
+
+
                     </div>
 
                 </div>
             </div>
         </div>
     </header>
+
+
     <!-- intro -->
 
     <section id="services">
@@ -104,26 +115,24 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col s4">
-                    <span class="fa-stack fa-4x">
-                        <a class="btn-floating btn-large #ffc107 amber"><i class="material-icons">laptop</i></a>
-                    </span>
+                <div class="col s12 m6 l4">
+                    <!-- <i class="material-icons large #00b0ff light-blue accent-3">laptop</i> -->
+                    <a href="#" class="btn-floating social laptop btn-large #00b0ff light-blue accent-3" ><i  class="fa fa-laptop"></i></a>
                     <h4 class="service-heading">Training</h4>
                     <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
                         architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-                <div class="col s4">
-                    <span class="fa-stack fa-4x">
-                        <a class="btn-floating btn-large #ffc107 amber "><i class="material-icons">tablet</i></a>
-                    </span>
+                <div class="col s12 m6 l4">
+                    <!-- <i class="material-icons large">phone</i> -->
+                    <a href="#" class="btn-floating social phone btn-large #00b0ff light-blue accent-3" ><i  class="fa fa-phone"></i></a>
+
                     <h4 class="service-heading">Connecting</h4>
                     <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
                         architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-                <div class="col s4">
-                    <span class="fa-stack fa-4x">
-                        <a class="btn-floating btn-large #ffc107 amber "><i class="material-icons">phone</i></a>
-                    </span>
+                <div class="col s12 m6 l4">
+                    <!-- <i class="material-icons large">keyboard</i> -->
+                    <a href="#" class="btn-floating  social tablet btn-large #00b0ff light-blue accent-3" ><i  class="fa fa-tablet"></i></a>
                     <h4 class="service-heading">Exposing</h4>
                     <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
                         architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -143,10 +152,10 @@
         </div>
         <div class="container-grid section white">
             <div class="row container">
-                <div class="col s8">
+                <div class="col s12 m6 l8">
                     <img src="./imgs/techhand.jpg" class="responsive-img" alt="">
                 </div>
-                <div class="col s4">
+                <div class="col s12 m6 l4">
                     <h2 class="section-heading text-uppercase">get to explore</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, quam ad. Reiciendis ut ipsam
                             eveniet tempore, quae nesciunt perferendis esse.</p>
@@ -157,20 +166,19 @@
 
     </article>
 
-
-
     <!-- subscribe -->
     <section class="page-section" id="subscribe">
         <div class="container">
             <div class="row">
-                <div class="col s12">
+                <div class="col m12 l12">
                     <form id="contactForm" name="sentMessage">
                         <div class="row">
                             <div class="col s12">
-                                <i class="material-icons">telegram</i>
+                                <a href="#" class="btn-floating #00b0ff light-blue accent-3 social telegram"
+                                    ><i class="fa fa-telegram"></i></a>
                                 <h4>Subscribe to receive updates! </h4>
                                 <div class="form-group">
-                                    <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                                    <input class="input-field" id="email" type="email" placeholder="Your Email *"
                                         required="required"
                                         data-validation-required-message="Please enter your email address.">
                                     <p class="help-block red"></p>
@@ -180,67 +188,66 @@
                             <div class="clearfix"></div>
                             <div class="col s12 text-center">
                                 <div id="success"></div>
-                                <button id="sendMessageButton" class="btn btn-large "
+                                <button id="sendMessageButton" class="btn btn-small #00b0ff light-blue accent-3 "
                                     onclick="formValidate()">Submit</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
+
+
+
         </div>
     </section>
 
 
-    <!-- floating button -->
+    <!-- fixed social buttons -->
     <section>
-        <div class="scroll-up right">
-            <!-- <a class="btn-floating pulse" href="index.html"><i class="material-icons">^</i></a> -->
-            <a id="scale-demo" href="index.html" class="btn-floating btn-large scale-transition scale-out">
-                <i class="material-icons">add</i>
+
+
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large #00b0ff light-blue accent-3">
+                <i class="material-icons large mdi-editor-mode-edit">chat</i>
             </a>
-
-
+            <ul>
+                <li><a href="#" class="btn-floating #e95950 pink darken-2 social instagram"
+                        style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="#" class="btn-floating #007bb5  light-blue accent-3 social linkedin"
+                        style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i
+                            class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" class="btn-floating #4dc247 green lighten-1 social whatsapp"
+                        style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;">
+                        <i class="fa fa-whatsapp"></i>
+                        <i class="large mdi-editor-insert-invitation"></i>
+                    </a></li>
+                <li><a href="#" class="btn-floating #303f9f indigo darken-2 social facebook"
+                        style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i
+                            class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="btn-floating blue social twitter"
+                        style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i
+                            class="fa fa-twitter"></i></a></li>
+            </ul>
         </div>
     </section>
-
-
-
-
-
 
     <!-- Footer -->
 
 
-    <footer class="page-footer">
-        <div class="row">
-            <div class="col s12 m6 l6">
-                <h5 class="white-text">Footer Content</h5>
-            </div>
+    <footer class="page-footer #bdbdbd grey lighten-1">
 
-            <div class="col right">
-                <a class="waves-effect waves-light btn-floating social twitter">
-                    <i class="fa fa-twitter"></i></a>
-                <a class="waves-effect waves-light btn-floating social facebook">
-                    <i class="fa fa-facebook"></i> </a>
-                <a class="waves-effect waves-light btn-floating social linkedin">
-                    <i class="fa fa-linkedin"></i></a>
-                <a class="waves-effect waves-light btn-floating social instagram">
-                    <i class="fa fa-instagram"></i></a>
-
-            </div>
-        </div>
-
-        <div class="footer-copyright">
+        <div class="footer-copyright ">
             <div class="container">
-                <small class="copyright">Copyright &copy; <a
+                <small class="copyright s12">Copyright &copy; <a
                         href="gmail.com/kevinalex846@gmail.com">kevinalex846@gmai.com </a> Egerton
                     2019</small>
 
-                <div class="inline-items right">
+                <div class="inline-items s12 right">
                     <small class="copyright"><a href="#">Privacy Policy</a></small>
 
                 </div>
-                <div class="inline-items right">
+                <div class="inline-items s12 right">
                     <small class="copyright"><a href="#">Terms & conditions</a></small>
 
                 </div>

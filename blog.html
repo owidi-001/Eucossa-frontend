@@ -14,6 +14,15 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Rokkitt|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
@@ -26,17 +35,16 @@
 
 </head>
 
-<body id="blog-page">
-    <section class="container-grid header">
+<body id="page-top">
+    <header class="container-grid header" id="projects">
         <div class="container-grid extended-nav-component">
-
-
-            <nav class="container-grid nav-extended teal-lighten nav-fixed">
-
-                <!-- nav items -->
+    
+            <nav class="container-grid nav-extended nav-fixed">
                 <div class="container nav-wrapper">
-                    <a class="link-text brand-logo nav-logo" href="index.html">eucossa</a>
-                    <ul class="list-container right hide-on-med-and-down">
+                    <a class=" brand-logo nav-logo" href="index.html">eucossa</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+    
                         <li class="list-item-container">
                             <a class="link-text" href="index.html">home</a>
                         </li>
@@ -44,34 +52,48 @@
                             <a class="link-text" href="blog.html">projects</a>
                         </li>
                         <li class="list-item-container">
-                            <a class="link-text" href="about.html">about</a>
+                            <a class='dropdown-trigger link-text' href="#" data-target='dropdown1'>about</a>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="about.html">ABOUT US</a></li>
+                                <li><a href="executive.html">EXUCUTIVE</a></li>
+                            </ul>
                         </li>
-                        <!-- <li class="list-item-container">
-                        <a class="link-text" href="#">Executives</a>
-                    </li> -->
                         <li class="list-item-container">
                             <a class="link-text" href="#">Join</a>
                         </li>
                     </ul>
-
                 </div>
             </nav>
-        </div>
-    </section>
-
-
-    <!-- section -->
-    <!-- <section class="row">
-    <div id="subscribe" class="section">
-            <h3 class="heading-2">FRESH COFFEE</h3>
-            <p class="paragraph paragraph-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our
-            coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
-            <div class="mx-auto">
-                <input type="email" name="subscribe" placeholder="somebody@somedomain.com" id="#">
-                <a class="btn  btn-xl" href="#">subscribe</a>
+    
+            <ul class="sidenav" id="mobile-demo">
+                <li class="list-item-container">
+                    <a class="link-text" href="index.html">home</a>
+                </li>
+                <li class="list-item-container">
+                    <a class="link-text" href="blog.html">projects</a>
+                </li>
+                <li class="list-item-container">
+                    <a class="link-text" href="about.html">about</a>
+                </li>
+                <li class="list-item-container">
+                    <a class="link-text" href="executive.html">Executives</a>
+                </li>
+                <li class="list-item-container">
+                    <a class="link-text" href="#">Join</a>
+                </li>
+            </ul>
+    
+            <!-- showcase -->
+            <div id="showcase" class="container-fluid">
+                <div class="text-caption container">
+                    <div class="text-header">
+                        <h1>Checkout for the latest projects</h1>
+                        <h5>we roll out great inventions on tech related fields... be updated</h5>
+                    </div>
+                </div>
             </div>
-    </div>
-</section> -->
+        </div>
+    </header>
 
 
     <!-- article -->
@@ -116,6 +138,7 @@
                             </p>
                         </div>
                     </div>
+                
                 </div>
             <div class="container-grid parallax-container parallax-750">
                 <div class="container-grid parallax">
@@ -157,16 +180,6 @@
             <div class="container-grid section white">
                 <div class="container-grid row">
                     <div class="container-grid col s12 m10 offset-m1 caption">
-                        <h2 class="heading-2">Heading Level 2</h2>
-                        <p class="paragraph paragraph-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Integer
-                            nec odio. Praesent libero. S.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-grid section white">
-                <div class="container-grid row">
-                    <div class="container-grid col s12 m10 offset-m1 caption">
                         <h2 class="heading-2">creativity</h2>
                         <p class="paragraph paragraph-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
                             accusantium ab repudiandae odio nobis, ullam voluptatum aut modi sapiente nulla quo eius
@@ -188,43 +201,37 @@
 
 
 
-<!-- Footer -->
-<footer class="page-footer">
-    <div class="row">
-        <div class="col s12 m6 l6">
-            <h5 class="white-text">Footer Content</h5>
-        </div>
-
-        <div class="col right">
-            <a class="waves-effect waves-light btn-floating social twitter">
-                <i class="fa fa-twitter"></i></a>
-            <a class="waves-effect waves-light btn-floating social facebook">
-                <i class="fa fa-facebook"></i> </a>
-            <a class="waves-effect waves-light btn-floating social linkedin">
-                <i class="fa fa-linkedin"></i></a>
-            <a class="waves-effect waves-light btn-floating social instagram">
-                <i class="fa fa-instagram"></i></a>
-
-        </div>
-    </div>
-
-    <div class="footer-copyright">
-        <div class="container">
-            <small class="copyright">Copyright &copy; <a href="gmail.com/kevinalex846@gmail.com">kevinalex846@gmai.com
-                </a> Egerton
-                2019</small>
-
-            <div class="inline-items right">
-                <small class="copyright"><a href="#">Privacy Policy</a></small>
-
+    <!-- Footer -->
+    
+    
+    <footer class="page-footer #bdbdbd grey lighten-1">
+            <div class="carousel ">
+                <a class="carousel-item" href="#one!"><img src="./imgs/carousel/apple.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="./imgs/carousel/robo.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="./imgs/carousel/entertain.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="./imgs/carousel/brain.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="./imgs/carousel/droid.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="./imgs/carousel/keyhead.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="./imgs/carousel/glow.jpg"></a>
             </div>
-            <div class="inline-items right">
-                <small class="copyright"><a href="#">Terms & conditions</a></small>
-
+        <div class="footer-copyright ">
+            <div class="container">
+                <small class="copyright s12">Copyright &copy; <a
+                        href="gmail.com/kevinalex846@gmail.com">kevinalex846@gmai.com </a> Egerton
+                    2019</small>
+    
+                <div class="inline-items s12 right">
+                    <small class="copyright"><a href="#">Privacy Policy</a></small>
+    
+                </div>
+                <div class="inline-items s12 right">
+                    <small class="copyright"><a href="#">Terms & conditions</a></small>
+    
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
 
 
 
