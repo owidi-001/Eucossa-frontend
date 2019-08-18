@@ -117,17 +117,24 @@
             color: #424242;
             font-size: 20px;
         }
-       
- 
-      
         /* article */
         
         article div.container {
             text-align: center;
             background-color: #ddd;
         }
-
-
+        /* communities */
+        
+        section.communities div.row {
+            font-family: 'Lobster Two', cursive;
+            color: #212830;
+            padding: 30px;
+            text-transform: uppercase;
+        }
+        
+        section.communities div.col img {
+            padding: 30px;
+        }
         /* subscribe */
         
         section#subscribe {
@@ -152,14 +159,12 @@
             display: inline-block;
             padding-right: 16px;
         }
-        footer.page-footer div.carousel{
+        
+        footer.page-footer div.carousel {
             padding: 0;
             margin: 0;
         }
-
         /* OTHER PAGES */
-
-
         /* projects/blog section */
         
         header#projects {
@@ -178,9 +183,6 @@
         article.blog-article {
             text-align: center;
         }
-        
-        
-
         /* about page */
         
         header#about {
@@ -195,23 +197,29 @@
             mix-blend-mode: multiply;
             padding: 8px;
         }
-          section.intro-text {
+        
+        section.intro-text {
             text-align: center;
         }
-        section.intro-text div.text-block h1{
+        
+        section.intro-text div.text-block h1 {
             font-size: 35px;
         }
-        section.intro-text div.text-block p{
+        
+        section.intro-text div.text-block p {
             font-size: 16px;
         }
+        
         section.storyline {
             padding: 30px;
             border-bottom: #ccc solid 1px;
         }
-          section.storyline h4{
+        
+        section.storyline h4 {
             font-size: 30px;
         }
-           section.storyline p{
+        
+        section.storyline p {
             font-size: 20px;
         }
         
@@ -222,21 +230,22 @@
         section.storyline div.storyline2 {
             text-align: right;
         }
-        section div.white h1{
+        
+        section div.white h1 {
             font-size: 30px;
         }
-        section div.white p{
+        
+        section div.white p {
             font-size: 20px;
         }
-
-
         /* contact */
         
         section#contact {
             text-align: center;
             border-top: #ccc 1px solid;
         }
-        section#contact h3.section-subheading{
+        
+        section#contact h3.section-subheading {
             font-size: 30px;
         }
         /* executives team page */
@@ -330,11 +339,11 @@
                 font-size: 20px;
             }
             article.blog-article h2.heading-1 {
-            font-size: 30px;
-        }
-        article.blog-article p.paragraph{
-            font-size: 16px;
-        }
+                font-size: 30px;
+            }
+            article.blog-article p.paragraph {
+                font-size: 16px;
+            }
             /* executives */
             header#executives {
                 height: 400px;
@@ -351,7 +360,6 @@
                 /* text-align: center; */
                 padding: 20px;
             }
-
             /* about*/
             header#about {
                 height: 400px;
