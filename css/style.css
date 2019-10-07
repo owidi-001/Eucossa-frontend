@@ -24,12 +24,15 @@ body#auth{
 }
 section.auth legend{
     text-align: center;
-    color: #9b9a96;
-    margin: 0;
-    padding: 0;
+    font-size: 40px;
+    font-weight: 700;
+    /* color: #9b9a96; */
+    color: goldenrod;
+    /* margin: 0;
+    padding: 0; */
     font-family: 'Roboto Slab', serif;
-    text-decoration: underline;
 }
+
 section.register {
     margin: 35px auto;
 }
@@ -37,8 +40,14 @@ section.login {
     margin: 120px auto;
 }
 
-
-
+#auth button,input{
+    background-color: goldenrod;
+    width: 100%;
+}
+#auth select,option{
+    background-color: transparent !important ;
+    color:#fff;
+}
 
         /* main page */
         
